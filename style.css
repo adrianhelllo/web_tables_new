@@ -1,0 +1,37 @@
+:root {
+    --TH-BG: #333;
+    --TD-ODDBG: white;
+    --TD-EVENBG: #ddd;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 5px;
+}
+
+table {
+    max-width: 80%;
+    margin: auto;
+}
+
+th {
+    background-color: var(--TH-BG);
+}
+
+td {
+    border: 2x solid #ccc;
+    border-collapse: collapse;
+}
+
+td:nth-child(odd) {
+    background-color: var(--TD-ODDBG);
+}
+
+td:nth-child(even) {
+    background-color: var(--TD-EVENBG);
+}

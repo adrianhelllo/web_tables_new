@@ -1,7 +1,6 @@
 :root {
-    --TH-BG: #333;
-    --TD-ODDBG: white;
-    --TD-EVENBG: #ddd;
+    --TD-CHECKERBG: #dcdcdc;
+    --TH-BG: #555;
 }
 
 * {
@@ -11,27 +10,32 @@
 }
 
 img {
-    width: 5px;
+    width: 90%;
+    margin: auto;
+    display: block;
 }
 
 table {
-    max-width: 80%;
     margin: auto;
+    width: min(50%, 1000px);
+    aspect-ratio: 1 / 1;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
 
 th {
     background-color: var(--TH-BG);
+    color: white;
+    text-align: center;
 }
 
 td {
-    border: 2x solid #ccc;
-    border-collapse: collapse;
+    width: calc(100% / 8);
+    border: 1px solid #555;
+    aspect-ratio: 1 / 1;
 }
 
-td:nth-child(odd) {
-    background-color: var(--TD-ODDBG);
-}
-
-td:nth-child(even) {
-    background-color: var(--TD-EVENBG);
+tr:nth-child(even) > td:nth-child(even),
+tr:nth-child(odd) > td:nth-child(odd) {
+    background-color: var(--TD-CHECKERBG);
 }

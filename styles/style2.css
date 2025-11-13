@@ -1,0 +1,59 @@
+:root {
+    --CAPTION-BG: rgb(61, 99, 134);
+    --THEAD-BG: rgb(156, 207, 255);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 1rem auto;
+    overflow-x: auto;
+    max-width: 1000px;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+}
+
+table th {
+    font-weight: normal;
+}
+
+table caption {
+    background-color: var(--CAPTION-BG);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem
+}
+
+thead {
+    background-color: var(--THEAD-BG);
+}
+
+thead th {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+tfoot {
+    font-weight: bold;
+    border-top: 1px solid black;
+}
+
+tr th, tr td {
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+    white-space: nowrap;
+}

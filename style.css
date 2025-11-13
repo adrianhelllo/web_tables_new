@@ -17,22 +17,20 @@ img {
 
 table {
     margin: auto;
-    width: min(50%, 1000px);
-    aspect-ratio: 1 / 1;
     border-collapse: collapse;
-    table-layout: fixed;
 }
 
 th {
     background-color: var(--TH-BG);
     color: white;
     text-align: center;
+    padding: 0 5px;
 }
 
 td {
-    width: calc(100% / 8);
+    width: 5vw;
+    height: 5vw;
     border: 1px solid #555;
-    aspect-ratio: 1 / 1;
 }
 
 tr:nth-child(even) > td:nth-child(even),
